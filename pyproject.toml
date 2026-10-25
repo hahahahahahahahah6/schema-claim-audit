@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "schema-claim-audit"
+version = "0.1.0"
+description = "Offline static audit of documented JSON field names against Python code"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+dependencies = []
+
+[project.scripts]
+schema-claim-audit = "schema_claim_audit.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
