@@ -7,7 +7,7 @@ Version 0.1.0. A Python >=3.9, standard-library-only static auditor of documente
 ```sh
 pip install schema-claim-audit
 schema-claim-audit ./project
-python -m schema_claim_audit ./project --verbose
+python3 -m schema_claim_audit ./project --verbose
 schema-claim-audit ./project --json --fail-on HIGH
 schema-claim-audit ./project --ignore documented-input-field-unread,documented-output-field-unwritten
 schema-claim-audit --version
@@ -53,5 +53,5 @@ There are no reverse-direction rules: undocumented code keys are not findings be
 
 ```sh
 PYTHONPATH=src python3 -m unittest discover -s tests -v
-python -m build
+python3 -m build
 ```
